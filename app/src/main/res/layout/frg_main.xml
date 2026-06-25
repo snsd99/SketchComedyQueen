@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/frg_main_intro"
+        android:layout_width="335dp"
+        android:layout_height="52dp"
+        android:text="@string/frg_main_intro_str"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frg_main_radiusImageView"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+        android:id="@+id/frg_main_roundButton"
+        style="@style/RoundButton.Auto"
+        android:layout_width="334dp"
+        android:layout_height="35dp"
+        android:text="关于"
+        android:textColor="@color/xui_default_round_btn_white_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frg_main_intro"
+        app:layout_constraintVertical_bias="0.224"
+        app:rb_backgroundColor="@color/xui_round_btn_green_bg"
+        app:rb_borderColor="@color/xui_round_btn_green_bg" />
+
+    <com.xuexiang.xui.widget.imageview.RadiusImageView
+        android:id="@+id/frg_main_radiusImageView"
+        android:layout_width="match_parent"
+        android:layout_height="521dp"
+        android:clickable="false"
+        android:src="@drawable/giselle_what_the_hell"
+        app:layout_constraintBottom_toBottomOf="@id/frg_main_intro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:riv_border_color="@color/xui_config_color_gray_6"
+        app:riv_border_width="1px"
+        app:riv_is_circle="false"
+ />
+    <!-- -->
+    <!--
+     以下是图片控件选中颜色
+        app:riv_selected_border_color="@color/xui_config_color_gray_4"
+        app:riv_selected_border_width="1px"
+        app:riv_selected_mask_color="@color/xui_config_color_gray_8"
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

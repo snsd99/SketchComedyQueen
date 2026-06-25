@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 瀑布效果，这个布局是指每个小格子。 -->
+<!-- background和layout_height设置每个格子的边框和高度 -->
+<!--  android:orientation="horizontal" 表示格子里的每个控件横着摆放，否则竖着摆放。-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_grid_item_selector"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:layout_height="150dp">
+    <ImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_tab_tools"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+         />
+    <TextView
+        android:id="@+id/itemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        android:text="按钮"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:textColor="#666666"
+   />
+
+</LinearLayout>

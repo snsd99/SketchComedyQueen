@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 菜单里每个小格子点击的颜色 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/teal_200" android:state_enabled="false" />
+    <item android:color="@color/teal_700" android:state_pressed="true" />
+    <item android:color="@color/teal_200" />
+</selector>
