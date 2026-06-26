@@ -24,10 +24,7 @@ public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.View
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(
-            @NonNull ViewGroup parent,
-            int viewType
-    ) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // item_component.xml是每个小方块的样式
         // 设置每个小方块的样式，都是上面图标，下面文字。
         View view = LayoutInflater.from(parent.getContext())
@@ -36,10 +33,7 @@ public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.View
     }
 
     @Override
-    public void onBindViewHolder(
-            @NonNull ViewHolder holder,
-            int position
-    ) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         // 获取点击的方块对象
         ComponentItem item = itemList.get(position);
         holder.icon.setImageResource(item.iconResId);
@@ -52,7 +46,7 @@ public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.View
     public int getItemCount() {
         return itemList.size();
     }
-
+    /** 定义的内部类ComponentAdapter.ViewHolder */
     static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView icon;
         TextView title;

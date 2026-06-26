@@ -4,23 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
     tools:context=".decrypt.activity.KugouDecActivity">
+    <!-- 顶部导航条 -->
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="酷狗音乐解密页面"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021" />
+
     <!-- 插入一个可滚动组件，RecyclerView -->
+    <!-- 该组件需要额外再添加一个布局文件来放控件 -->
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xui_config_color_titlebar"
+        app:layout_constraintBottom_toBottomOf="@+id/kugouRecyclerView"
+        app:layout_constraintTop_toTopOf="@+id/kugouRecyclerView"
+        app:layout_constraintVertical_bias="0.0"
+        app:tb_actionPadding="20dp"
+        app:tb_barHeight="65dp"
+        app:tb_dividerColor="@color/xui_config_color_red"
+
+        app:tb_leftText="回退"
+        app:tb_sideTextPadding="20dp"
+        app:tb_subTitleText="这是副标题"
+        app:tb_titleText="这是一个Title"
+        tools:layout_editor_absoluteX="0dp" />
+
     <com.xuexiang.xui.widget.layout.linkage.view.LinkageRecyclerView
         android:id="@+id/kugouRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>

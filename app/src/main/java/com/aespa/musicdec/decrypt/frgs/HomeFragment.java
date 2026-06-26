@@ -98,6 +98,4 @@ public class HomeFragment extends Fragment {
         this.giselleImgView = (RadiusImageView) view.findViewById(R.id.frg_main_radiusImageView);
         this.giselleImgView.setOnClickListener(v -> XToast.normal(requireContext(), "Giselle: What the hell??").show());
     }
-
-
 }

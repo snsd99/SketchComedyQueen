@@ -93,6 +93,8 @@ public class MenuFragment extends Fragment {
         list.add(new ComponentItem(R.drawable.item_icon_kugou, "酷狗音乐(kgma)", new KugouBlockOnClickListener((Activity) requireContext())));
         list.add(new ComponentItem(R.drawable.item_icon_kuwo, "酷我音乐(kwm)", null));
         list.add(new ComponentItem(R.drawable.item_icon_qqmusic, "QQ音乐(qmc等)", null));
+        // TODO: 有其它菜单（功能）可以继续调用list.add来添加
+        // TODO: list.add中的ComponentItem，有点击响应需要实现，不要忘记了！
         ComponentAdapter adapter = new ComponentAdapter(list);
         recyclerView.setAdapter(adapter);
     }
