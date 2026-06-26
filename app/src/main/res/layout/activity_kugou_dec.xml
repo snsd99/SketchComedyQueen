@@ -16,5 +16,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021" />
+    <!-- 插入一个可滚动组件，RecyclerView -->
+    <com.xuexiang.xui.widget.layout.linkage.view.LinkageRecyclerView
+        android:id="@+id/kugouRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
